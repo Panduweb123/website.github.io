@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Furnicture Libary</title>
+    <link rel="stylesheet" href="home style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <nav class="navbar">
+    <img src="img/Group 6.png" class="logo">
+
+    <div class="navbar-nav">
+      <a href="home.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#" id="cart-button"><i data-feather="shopping-cart"></i></a>
+    </div>
+
+    <!-- Search Form Start -->
+     <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here..." >
+     </div>
+    <!-- Search Form End -->
+      <!-- Shopping START -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product1.png" alt="Product 1">
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 500.00</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="shop-footer">
+          <div class="total">
+            <h4>Total</h4>
+            <div class="cart-total">IDR0</div>
+          </div>
+          <button class="check-btn">Check Out</button>
+        </div>
+       </div>
+      <!-- Shopping END -->
+  </nav>
+
+  <body>
+    <section class="product-list" id="product-list">
+      <h1 class="heading-product"><span>About</span></h1>
+      <div class="pro-about">
+      <p>Furniture Library Purwokerto didirikan sebagai salah satu toko furnitur unggulan di wilayah Purwokerto yang berfokus pada penyediaan furnitur berkualitas untuk keperluan rumah, kantor, dan ruang belajar. Toko ini memulai operasinya pada tahun 2024 dengan visi menghadirkan furnitur modern yang fungsional dan estetik bagi masyarakat Purwokerto.</p>
+      <br>
+      <p>Nama "Library" diambil dari konsep awal toko yang menyediakan furnitur untuk ruang belajar, seperti rak buku, meja belajar, dan kursi ergonomis. Namun, seiring dengan meningkatnya permintaan, koleksi produk toko ini diperluas mencakup furnitur untuk ruang tamu, kamar tidur, hingga dapur.
+Furniture Library terkenal karena desain produk yang inovatif, material berkualitas, serta layanan pelanggan yang ramah. Dengan memadukan elemen lokal dan tren desain global, toko ini telah menjadi salah satu destinasi utama bagi masyarakat Purwokerto yang mencari furnitur modern dan terjangkau.</p>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="product.html">chair</a></li>
+                    <li><a href="product.html">bed</a></li>
+                    <li><a href="product.html">table</a></li>
+                    <li><a href="product.html">decoration</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/furniture.library_/profilecard/?igsh=MThqMHppdWU0cGdqMA=="><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/furniture.library_/profilecard/?igsh=MThqMHppdWU0cGdqMA=="><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/furniture.library_/profilecard/?igsh=MThqMHppdWU0cGdqMA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/furniture.library_/profilecard/?igsh=MThqMHppdWU0cGdqMA=="><i class="fab fa-linkendin-in"></i></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+  
+  </body>
+
+  <script>
+    feather.replace();
+  </script> 
+  
+  <script src="home.js"></script>
+</html>

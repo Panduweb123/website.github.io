@@ -1,0 +1,253 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background-color: #fbf9f1;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #f6e6cb;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.header .logo {
+     width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 2rem;
+  color: black;
+}
+
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 56px;
+}
+
+.home-content h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.home-content p {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+
+.action-btn {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background: #6c4e31;
+  padding: 1em 4rem;
+  border-radius: 20px;
+  margin: 1rem 0;
+  transition: 0.3s;
+}
+
+.heading {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.heading span {
+  display: inline-block;
+  background: #f6e6cb;
+  color: black;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.recommendation .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+}
+
+.recommendation .box-container .box {
+  padding: 3rem 2rem;
+  background: #f6e6cb;
+  outline: #1a1a1d;
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recommendation .box-container .box .btn {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background: #6c4e31;
+  padding: 1em 4rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  transition: 0.3s;
+}
+
+.recommendation .box-container .box h3 {
+  font-size: 20px;
+  padding: 16px;
+  margin-top: 1rem;
+}
+
+.payment .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.5rem;
+}
+
+.payment .box-container .box {
+  padding: 3rem 2rem;
+  background: #f6e6cb;
+  outline: #1a1a1d;
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+}
+
+.payment .box-container .box h3 {
+  font-size: 20px;
+  padding: 16px;
+  margin-top: 1rem;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.footer .box-container .box {
+  background: #f6e6cb;
+}
+
+.footer .box-container h3 {
+  font-size: 20px;
+  padding: 16px;
+  margin-top: 1rem;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.footer{
+  background: #f6e6cb;
+  padding: 70px 0;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ffc500;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul{
+  list-style: none;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  transition: all .3s ease;
+}
+.footer-col ul li a:hover{
+  color: #fff;
+  padding-left: 6px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: #f6e6cb;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  transition: all .5s ease;
+
+}
+.footer-col .social-links a:hover{
+  color: black;
+  background: #24262b;
+}

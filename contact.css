@@ -1,0 +1,319 @@
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    font-family: 'Nunito',sans-serif;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #f6e6cb;
+}
+
+.navbar .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.navbar .navbar-nav a{
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    color: black;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: darkslategrey;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid  ;
+    color: darkslategrey;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+    color: black;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: darkslategrey;
+}
+
+/* Search Form */
+.navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 6%;
+    width: 40rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s
+}
+
+.navbar .search-form.active {
+    transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: black;
+    padding: 1rem;
+}
+
+/* Shopping */
+.shopping-cart {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 35rem;
+    padding: 0 1.5rem;
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
+  }
+
+  .shopping-cart.active {
+    right: 0;
+  }
+
+  .shopping-cart img {
+    height: 6rem;
+    border-radius: 50%;
+  }
+   
+  .shopping-cart .shop-footer {
+    position: absolute;
+    bottom: 120px;
+    width: 88%;
+  }
+  .shopping-cart .cart-item {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #666;
+    position: relative;
+  }
+  
+  .shopping-cart img {
+    height: 6rem;
+    border-radius: 50%;
+  }
+  
+  .shopping-cart h3 {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .shopping-cart .item-price {
+    font-size: 1.2rem;
+  }
+  
+  .shopping-cart .remove-item {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px 10px;
+  }
+
+  .check-btn {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1rem;
+    background: #f6e6cb;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+    body{
+        width:100%;
+        height:100vh;
+        justify-content:center;
+        color: black;
+        background: #fff;
+        margin-right: 4rem;
+    }
+
+    .contact {
+       margin-bottom: 7rem;
+       margin: 7rem;
+       padding-top: 4rem;
+    }
+
+    .contact-container{
+    max-width: 960px;
+    margin: 1rem;
+    width: 100;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 1.5rem;
+    background: #f6e6cb;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.form-container{
+  padding: 20px;
+  margin: 12px;
+  align-items: center;
+}
+.form-container h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact-form {
+  display: grid;
+  row-gap: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  font-weight: bold;
+  justify-content: center;
+}
+.contact-form input {
+  width: 100%;
+  border: none;
+  outline: 2px solid  black;
+  background: #2c2f48;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: black;
+  border-radius: 0.4rem;
+  margin-top: 10px;
+}
+.contact-form textarea{
+  resize: none;
+  outline: 2px solid black;
+  height: 200px;
+}
+.contact-form .send-button{
+  border: none;
+  outline: none;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Poppins',sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-form .send-button:hover{
+ background: hsl(181, 100%, 44%, 0.8);
+ transition: 0.3s all linear;
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer{
+    background: #f6e6cb;
+    padding: 70px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #ffc500;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 6px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #f6e6cb;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all .5s ease;
+
+}
+.footer-col .social-links a:hover{
+    color: black;
+    background: #24262b;
+}
+  
